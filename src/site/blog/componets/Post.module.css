@@ -1,0 +1,47 @@
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+.blogContainer {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+  }
+
+.post {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+.post:last-child {
+    border-bottom: none;
+  }
+
+.post img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+
+.postTitle {
+    font-size: 1.5rem;
+    color: #333;
+  }
+
+.postParagraph {
+    font-size: 1rem;
+    color: #555;
+  }
+
+.postDate {
+    font-size: 0.9rem;
+    color: #888;
+  }

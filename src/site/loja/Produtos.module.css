@@ -1,0 +1,9 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+header { background-color: #28a745; color: white; padding: 15px 0; text-align: center; }
+nav a { margin: 0 10px; color: white; text-decoration: none; }
+.categories { display: flex; justify-content: space-around; margin: 40px; }
+.categoryCard { width: 30%; background: #f1f1f1; border-radius: 8px; text-align: center; padding: 20px; transition: transform 0.3s; }
+.categoryCard:hover { transform: scale(1.05); box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); }
+.categoryCard img { width: 100%; height: auto; border-radius: 5px; }
+.categoryCard h3 { margin-top: 15px; color: #28a745; }
+footer { background-color: #333; color: white; text-align: center; padding: 10px; }
