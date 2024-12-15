@@ -2,6 +2,9 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    width: 20rem;
+    height: 30rem;
+    margin-top: 0.5rem;
   }
 
 .blogContainer {
@@ -11,12 +14,17 @@
     background: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
+    height: 26rem;
+    transition: transform 0.3s ease,
   }
 
+.blogContainer:hover {
+   transform: scale(1.1); /* Aumenta a imagem */ /* Reduz a opacidade */
+}
 .post {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: px;
     margin-bottom: 20px;
     padding: 15px;
     border-bottom: 1px solid #ddd;
@@ -39,9 +47,11 @@
 .postParagraph {
     font-size: 1rem;
     color: #555;
+    margin: 0.2rem 0;
   }
 
 .postDate {
     font-size: 0.9rem;
     color: #888;
+    margin-bottom: 2rem;
   }

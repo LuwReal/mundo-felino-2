@@ -2,6 +2,7 @@ import style from './Produtos.module.css'
 function Produtos(){
     return(
         <div>
+            <img className={style.logoTipoMundoFelino2} src='/img/Mundo Felino 2.png' alt='Imagem da Logo Mundo Felino 2' />
                 <section className={style.categoryCard}>
                     <div className={style.categoryCard}>
                         <img src="roupas.jpg" alt="Roupas" />
