@@ -1,4 +1,6 @@
 import style from './Page2.module.css'
+import Recomendados from '../componets/Recomendados';
+import RedeSocial from '../componets/RedeSocial';
 import { Helmet } from 'react-helmet-async';
 
 function Page2(){
@@ -14,10 +16,10 @@ function Page2(){
             <article className={style.articleContainer}>
                 <h1 className={style.articleTitle}>5 Gatos Mais Famosos do Japão: História e Curiosidades que Você Precisa Conhecer</h1>
                 <p className={style.articleText}>Hoje iremos falar do O Japão é um destino fascinante para os amantes de gatos! Sabia que ele tem uma relação especial com os gatos, que são vistos como símbolos de sorte, prosperidade e companheirismo? Além disso, muitos gatos ganharam fama através da cultura popular, internet e histórias curiosas. Confira abaixo os cinco gatos mais icônicos do Japão:</p>
-                <p className={style.articleText}>(Aviso: isso é apenas uma suposição baseada em dados encontrados na internet. Não foi feito nenhum estudo ou projeto de coleta de dados para que fosse realizada tal descoberta.)</p>
+                <p className={style.articleText}>Nota: isso é apenas uma suposição baseada em dados encontrados na internet. Não foi feito nenhum estudo ou projeto de coleta de dados para que fosse realizada tal descoberta.</p>
                 <ul className={style.articleList}>
                     <li>
-                        <h2 className={style.articleListItem}>1 - Maneki-Neko</h2>
+                        <h2 className={style.articleListItem}>1 - Maneki Neko</h2>
                         <p className={style.articleListText}>Esse aqui dispensa apresentações! Quando falamos em gatos no Japão, é impossível não lembrar do Maneki-Neko, conhecido como o "gato da sorte". Provavelmente, é o gato mais famoso do Japão. Essa figura está presente em diversos lugares, como animes, comércios, restaurantes e lares, sendo usada como amuleto de sorte.</p>
                         <p className={style.articleListText}>Características marcantes:</p>
                         <ul>
@@ -25,6 +27,8 @@ function Page2(){
                             <li>Simboliza sorte, riqueza e proteção.</li>
                             <li>Origem associada a lendas populares.</li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Maneki Neko</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page2/maneki-neko.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
 
                     <li>
@@ -36,6 +40,8 @@ function Page2(){
                             <li>Um dos maiores ícones da cultura pop japonesa.</li>
                             <li>Associada a produtos que vão de brinquedos a aviões decorados.</li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Hello Kitty</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page2/hello-kitty.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
 
                     <li>
@@ -47,6 +53,8 @@ function Page2(){
                             <li>Atraía milhares de turistas para a região.</li>
                             <li>Após sua morte, recebeu um santuário em sua homenagem.</li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Tama</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page2/tama-a-gata-chefe-de-estacao.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
 
                     <li>
@@ -58,8 +66,9 @@ function Page2(){
                             <li>Protagonista de vídeos virais desde 2008.</li>
                             <li>Adorado por sua personalidade brincalhona.</li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Maru</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page2/maru-o-gato-das-caixas.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
-
                     <li>
                         <h2 className={style.articleListItem}>5 - Gatos de Gotokuji</h2>
                         <p className={style.articleListText}>Embora não seja um gato real, o templo Gotokuji é um local bastante conhecido pela peculiaridade de ter inúmeras estátuas do Maneki-Neko. É um ótimo lugar para tirar fotos impressionantes e encher os olhos de quem aprecia a cultura japonesa.</p>
@@ -69,14 +78,17 @@ function Page2(){
                             <li>Relacionado à história de sorte e proteção.</li>
                             <li>Destino popular entre turistas e adoradores de gatos.</li>
                         </ul>
+                        <p><i>Imagem Abaixo Templo Gotokuji</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page2/templo-gotokuji.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
                 </ul>
                 <div className={style.articleFooter}>
+                    <RedeSocial />
                     <h3>Gatos e a Cultura Japonesa</h3>
                     <p>Esses são apenas alguns dos gatos bastante conhecidos, desempenhando papéis únicos e especiais na cultura japonesa. Seja através da tradição, internet ou representações simbólicas, esses felinos continuam a encantar gerações e a inspirar histórias.</p>
                 </div>
-                
             </article>
+            <Recomendados />
         </div>
     )
 }

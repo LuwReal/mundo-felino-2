@@ -1,4 +1,6 @@
 import style from './Page1.module.css'
+import Recomendados from '../componets/Recomendados';
+import RedeSocial from '../componets/RedeSocial';
 import { Helmet } from 'react-helmet-async';
 
 function Page1(){
@@ -19,7 +21,7 @@ function Page1(){
                     aparência fofa "Alguns gatos adoráveis, especialmente os amarelos, podem mostrar um temperamento mais forte às vezes. (rsrsrs)" e seus comportamentos suspeitos,
                     podemos assim dizer, fazem deles companheiros especiais. Deixando de papo furado, aqui estão as cinco raças de gatos mais famosas e amadas globalmente:
                 </p>
-                <p className={style.articleText}>(Aviso: isso é apenas uma suposição baseada em dados encontrados na internet. Não foi feito nenhum estudo ou projeto de coleta de dados para que fosse realizada tal descoberta.)</p>
+                <p className={style.articleText}>Nota: isso é apenas uma suposição baseada em dados encontrados na internet. Não foi feito nenhum estudo ou projeto de coleta de dados para que fosse realizada tal descoberta.</p>
                 <ul className={style.articleList}>
                     <li>
                         <h2 className={style.articleListItem}>1 - Siamês</h2>
@@ -33,6 +35,8 @@ function Page1(){
                             <li><u>Adoram interagir com humanos</u></li>
                             <li><u>Altamente inteligentes e curiosos</u></li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Siamês</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page1/gato-siames.jpg' alt="Gato Siames com pelagem clara e pontas escuras nas orelhas, patas e cauda, olhando para a câmera." title='Gato Siamês'/>
                     </li>
                     <li>
                         <h2 className={style.articleListItem}>2 - Maine Coon</h2>
@@ -43,20 +47,24 @@ function Page1(){
                         Características marcantes:
                         </p>
                         <ul className={style.articleListText}>
-                            <li>Porte imponente e robusto</li>
-                            <li>Adoram brincar e são muito carinhosos</li>
-                            <li>Pelagem que exige escovação regular (rapaz isso não e uma desvantagem?)</li>
+                            <li><u>Porte imponente e robusto</u></li>
+                            <li><u>Adoram brincar e são muito carinhosos</u></li>
+                            <li><u>Pelagem que exige escovação regular (rapaz isso não e uma desvantagem?)</u></li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Maine Coon</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page1/gato-maine-coon.jpg' alt="Gato Maine Coon, grande e peludo, com orelhas pontudas e cauda longa, em ambiente natural." title='Gato Maine Coon'/>
                     </li>
                     <li>
                         <h2 className={style.articleListItem}>3 - Persa</h2>
                         <p className={style.articleListText}>Famosos por sua pelagem longa e luxuosa e seus rostos achatados, os gatos persas são ícones de elegância e tranquilidade. Eles são mais relaxados e preferem ambientes calmos, tornando-os ideais para famílias que buscam um animal de estimação mais tranquilo. (Confesso que não sou fã dessa raça, mas quando estou perto de um, lá estou eu fazendo carinho na fofura, rsrsrs!)</p>
                         <p className={style.articleListText}>Características marcantes:</p>
                         <ul className={style.articleListText}>
-                            <li>Aparência sofisticada</li>
-                            <li>Personalidade calma e afetuosa</li>
-                            <li>Necessitam de cuidados frequentes com a pelagem</li>
+                            <li><u>Aparência sofisticada</u></li>
+                            <li><u>Personalidade calma e afetuosa</u></li>
+                            <li><u>Necessitam de cuidados frequentes com a pelagem</u></li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Persa</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page1/gato-persa.jpg' alt="Gato Persa de pelagem densa e longa, com rosto arredondado e expressão tranquila." title='Gato Persa'/>
                     </li>
                     <li>
                         <h2 className={style.articleListItem}>4 - Bengal</h2>
@@ -67,10 +75,14 @@ function Page1(){
                         Características marcantes:
                         </p>
                         <ul className={style.articleListText}>
-                            <li>Energéticos e brincalhões</li>
-                            <li>Altamente inteligentes</li>
-                            <li>Necessitam de espaço para explorar e brincar (mesma coisa de solta um furação em sua casa)</li>
+                            <li><u>Energéticos e brincalhões</u></li>
+                            <li><u>Altamente inteligentes</u></li>
+                            <li><u>Necessitam de espaço para explorar e brincar (mesma coisa de solta um furação em sua casa)</u></li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato Bengal</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page1/gato-bengal.jpg' alt="Gato Bengal com pelagem manchada e aparência selvagem, brincando em um ambiente interno." title='Gato Bengal'/>
+                    </li>
+                    <li>
                     </li>
                     <li>
                         <h2 className={style.articleListItem}>5 - Ragdoll</h2>
@@ -79,17 +91,21 @@ function Page1(){
                         </p>
                         <p className={style.articleListText}>Características marcantes:</p>
                         <ul className={style.articleListText}>
-                            <li>Personalidade doce e submissa</li>
-                            <li>Adoram companhia humana</li>
-                            <li>Fáceis de treinar e adaptáveis</li>
+                            <li><u>Personalidade doce e submissa</u></li>
+                            <li><u>Adoram companhia humana</u></li>
+                            <li><u>Fáceis de treinar e adaptáveis</u></li>
                         </ul>
+                        <p><i>Imagem Abaixo Gato RagDoll</i></p>
+                        <img className={style.articleListImg} src='/img/blog/page1/gato-ragdoll.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
                 </ul>
                 <div className={style.articleFooter}>
+                    <RedeSocial link1={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'} link2={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}link3={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}/>
                     <h3>Qual é a sua raça favorita?</h3>
                     <p>Bem, tanto defeitos quanto desvantagens, todos os gatos possuem suas qualidades, que os tornam especiais. Mas o que importa é o quanto você ama seus felinos. Apesar da forma discreta com que demonstram seu amor, isso não os torna menos especiais. Por isso, ao escolher um gato, considere seu estilo de vida e o tipo de personalidade que melhor se encaixa na sua família.</p>
                 </div>
             </article>
+            <Recomendados />
         </div>
     )
 }

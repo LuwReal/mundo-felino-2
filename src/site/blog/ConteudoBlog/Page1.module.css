@@ -1,7 +1,6 @@
-.teste{
-    color: red
+.container{
+    display: flex;
 }
-/* Estilo geral do artigo */
 .articleContainer {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -62,5 +61,14 @@
     text-align: center;
     margin-top: 20px;
     border-top: 5px solid #777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.articleListImg{
+    width: 45rem;
+    border-radius: 1rem;
+
 }
 

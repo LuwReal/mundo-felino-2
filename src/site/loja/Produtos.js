@@ -1,28 +1,180 @@
 import style from './Produtos.module.css'
 function Produtos(){
     return(
-        <div>
-            <img className={style.logoTipoMundoFelino2} src='/img/Mundo Felino 2.png' alt='Imagem da Logo Mundo Felino 2' />
-                <section className={style.categoryCard}>
-                    <div className={style.categoryCard}>
-                        <img src="roupas.jpg" alt="Roupas" />
-                        <h3>Roupas</h3>
-                        <p>Descubra a nova coleção de roupas.</p>
-                        <button>Ver Produtos</button>
-                    </div>
-                    <div className={style.categoryCard}>
-                        <img src="acessorios.jpg" alt="Acessórios" />
-                        <h3>Acessórios</h3>
-                        <p>Explore acessórios que complementam o seu estilo.</p>
-                        <button>Ver Produtos</button>
-                    </div>
-                    <div className={style.categoryCard}>
-                        <img src="calcados.jpg" alt="Calçados" />
-                        <h3>Calçados</h3>
-                        <p>Conforto e estilo para seus pés.</p>
-                        <button>Ver Produtos</button>
-                    </div>
-                </section>
+        <div className={style.container}>
+            <div>
+                <h2>Cat Shoope</h2>
+                <ul>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                </ul>
+                <h2>Cat Mercado Livre</h2>
+                <ul>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                </ul>
+                <h2>Cat Amazon</h2>
+                <ul>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                    <li>
+                        <img src="./img/mundo-felino-2.png" alt="Isso e uma imagem"/>
+                        <h3>Nome do Produto</h3>
+                        <p>Oque e o Produto</p>
+                        <p>Caracteristica Do Produto</p>
+                        <table>
+                            <tr>
+                                <td>já vendidos</td>
+                                <td>580 produtos</td>
+                            </tr>
+                            <tr>
+                                <td>Avaliação</td>
+                                <td>254 avaliações</td>
+                            </tr>
+                        </table>
+                        <p>Preço: R$59,99</p>
+                        <p><e>Em Breve</e></p>
+                    </li>
+                </ul>
+            </div>
         </div>
     )
 }

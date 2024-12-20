@@ -1,0 +1,17 @@
+.container{
+    color: rgb(42, 50, 61);
+    margin: 0 10rem;
+}
+.container ul{
+    list-style-type: none;
+}
+.sumario{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+.sumario ul{
+    margin: 0;
+    list-style-type: circle;
+    cursor: pointer;
+}

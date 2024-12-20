@@ -1,7 +1,28 @@
-.teste{
+.container{
     height: 10rem;
     background-color: #333; 
     color: white;
     text-align: center; 
     padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container ul{
+    list-style-type: none;
+    padding: 0;
+}
+.container div{
+    border-left: 2px solid white;
+    text-align: center;
+    margin-left: 0.5rem;
+    height: 100%;
+    padding-left: 1rem;
+}
+.container h5{
+    margin: 0;
+}
+.container a{
+    color: #fff;
+    text-decoration: none;
 }
