@@ -99,8 +99,10 @@ function Page1(){
                         <img className={style.articleListImg} src='/img/blog/page1/gato-ragdoll.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
                 </ul>
-                <div className={style.articleFooter}>
+                <div className={style.redesSocial}>
                     <RedeSocial link1={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'} link2={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}link3={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}/>
+                </div>
+                <div className={style.articleFooter}>
                     <h3>Qual é a sua raça favorita?</h3>
                     <p>Bem, tanto defeitos quanto desvantagens, todos os gatos possuem suas qualidades, que os tornam especiais. Mas o que importa é o quanto você ama seus felinos. Apesar da forma discreta com que demonstram seu amor, isso não os torna menos especiais. Por isso, ao escolher um gato, considere seu estilo de vida e o tipo de personalidade que melhor se encaixa na sua família.</p>
                 </div>

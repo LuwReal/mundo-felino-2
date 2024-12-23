@@ -82,8 +82,10 @@ function Page2(){
                         <img className={style.articleListImg} src='/img/blog/page2/templo-gotokuji.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
                 </ul>
-                <div className={style.articleFooter}>
+                <div className={style.redesSocial}>
                     <RedeSocial />
+                </div>
+                <div className={style.articleFooter}>
                     <h3>Gatos e a Cultura Japonesa</h3>
                     <p>Esses são apenas alguns dos gatos bastante conhecidos, desempenhando papéis únicos e especiais na cultura japonesa. Seja através da tradição, internet ou representações simbólicas, esses felinos continuam a encantar gerações e a inspirar histórias.</p>
                 </div>

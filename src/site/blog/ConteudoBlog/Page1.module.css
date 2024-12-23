@@ -1,6 +1,9 @@
 .container{
     display: flex;
 }
+.container em{
+    color: #888;
+}
 .articleContainer {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -71,4 +74,8 @@
     border-radius: 1rem;
 
 }
-
+.redesSocial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

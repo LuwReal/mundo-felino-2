@@ -62,8 +62,10 @@ function Page3(){
                         <img className={style.articleListImg} src='/img/blog/page3/gato-reflexo.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
                     </li>
                 </ul>
-                <div className={style.articleFooter}>
+                <div className={style.redesSocial}>
                     <RedeSocial />
+                </div>
+                <div className={style.articleFooter}>
                     <h3>O Fascínio dos Gatos</h3>
                     <p>Esses rankings absurdos mostram como os gatos vão além das nossas expectativas. Quem imaginaria que seu felino seria muito mais do que um animal de estimação? Eles continuam a desafiar nossas expectativas.</p>
                 </div>
