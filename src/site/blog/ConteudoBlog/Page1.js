@@ -1,111 +1,89 @@
+import { Helmet } from 'react-helmet-async'
+import Recomendados from '../componets/Recomendados'
+import RedeSocial from '../componets/RedeSocial'
 import style from './Page1.module.css'
-import Recomendados from '../componets/Recomendados';
-import RedeSocial from '../componets/RedeSocial';
-import { Helmet } from 'react-helmet-async';
 
 function Page1(){
     return(
         <div className={style.container}>
             <Helmet>
-                <meta name="description" content="Descubra as 5 raças de gatos mais conhecidas mundialmente e suas características marcantes." />
-                <meta property="og:title" content="Raças de Gatos Famosas" />
-                <meta property="og:description" content="Descubra as 5 raças de gatos mais conhecidas mundialmente e suas características marcantes." />
+                <meta name="description" content="Descubra os 10 alimentos mais perigosos para gatos, os riscos que oferecem à saúde felina e como proteger seu pet. Garanta uma vida longa e saudável ao seu gato com dicas essenciais." />
+                <meta property="og:title" content="Os 10 Alimentos Mais Perigosos para Gatos" />
+                <meta property="og:description" content="Descubra os 10 alimentos mais perigosos para gatos, os riscos que oferecem à saúde felina e como proteger seu pet. Garanta uma vida longa e saudável ao seu gato com dicas essenciais." />
                 <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
-                <title>As 5 Raças de Gatos Famosas</title>
+                <title>Os 10 Alimentos Mais Perigosos para Gatos</title>
             </Helmet>
             <article className={style.articleContainer}>
-                <h1 className={style.articleTitle}>As 5 Raças de Gatos Mais Famosas do Mundo</h1>
-                <p className={style.articleText}>Hoje iremos conhecer uma das raças mais conhecidas de gatos,
-                    que são considerados encantadores e conquistam milhões
-                    de corações e lares ao redor do mundo os gato. Suas personalidades,
-                    aparência fofa "Alguns gatos adoráveis, especialmente os amarelos, podem mostrar um temperamento mais forte às vezes. (rsrsrs)" e seus comportamentos suspeitos,
-                    podemos assim dizer, fazem deles companheiros especiais. Deixando de papo furado, aqui estão as cinco raças de gatos mais famosas e amadas globalmente:
-                </p>
-                <p className={style.articleText}>Nota: isso é apenas uma suposição baseada em dados encontrados na internet. Não foi feito nenhum estudo ou projeto de coleta de dados para que fosse realizada tal descoberta.</p>
+                <h1 className={style.articleTitle}>Os 10 Alimentos Mais Perigosos para Gatos: Proteja o Seu Gato</h1>
+                <p className={style.articleText}>Manter a alimentação do seu gato saudável é essencial para sua longevidade e bem-estar. Uma das frases de Jake Perry, dono da gata que viveu por muito tempo, registrada no Guinness World Records, Crème Puff, é um exemplo claro disso. Ela alcançou a impressionante idade de 38 anos. Saiba mais... Contudo, muitos alimentos que são inofensivos para seres humanos podem ser extremamente prejudiciais, ou até fatais, para os felinos. Também existem alimentos saudáveis que são recomendados, mas isso é para outro momento. Se você deseja garantir que seu gato se mantenha saudável e feliz, é fundamental saber quais alimentos devem ser evitados. Confira os 10 alimentos mais perigosos para os gatos e como protegê-los.</p>
                 <ul className={style.articleList}>
                     <li>
-                        <h2 className={style.articleListItem}>1 - Siamês</h2>
-                        <p className={style.articleListText}>
-                        O gato siamês é ums dos gatos mais procurados e conhecidos por sua beleza exótica. Há uma discordância sobre as variações dessa raça, pois dizem que temos o siamês "original" e o "pirata". Caso queira saber mais sobre isso, busque por "Saiba a diferença entre gato siamês".
-                        Possuem pelagem curta e macia, com tons escuros no rosto, patas e cauda, contrastando com o corpo extremamente claro. Seus olhos azul-claros intensos e suas "vocalizações" distintivas tornam esta raça especialmente memorável.
-                        </p>
-                        <p className={style.articleListText}>Características marcantes:</p>
-                        <ul className={style.articleListText}>
-                            <li><u>Sociáveis e falantes</u></li>
-                            <li><u>Adoram interagir com humanos</u></li>
-                            <li><u>Altamente inteligentes e curiosos</u></li>
-                        </ul>
-                        <p><i>Imagem Abaixo Gato Siamês</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page1/gato-siames.jpg' alt="Gato Siames com pelagem clara e pontas escuras nas orelhas, patas e cauda, olhando para a câmera." title='Gato Siamês'/>
+                        <h2 className={style.articleListItem}>1. Chocolate</h2>
+                        <p className={style.articleListText}>O chocolate contém teobromina, uma substância altamente tóxica para gatos. Lembro da vez que dei uma bolinha de cereal com chocolate para um pet pequeno, e no outro dia ele havia falecido. Nunca mais dei chocolate para animais. Mesmo pequenas quantidades podem causar vômitos, diarreia, tremores e, em casos graves, danos ao sistema nervoso e até a morte. Mantenha qualquer produto que contenha chocolate fora do alcance do seu gato.</p>
+                        <img className={style.articleListImg} src='/img/blog/page1/chocolate.jpg' alt="Trufas de Chocolate em Ordem" title='Trufas de Chocolate'/>
                     </li>
+
                     <li>
-                        <h2 className={style.articleListItem}>2 - Maine Coon</h2>
-                        <p className={style.articleListText}>
-                        Rapaz, pensa em um bicho grande! Considerada uma das maiores raças de gatos do mundo, o Maine Coon é conhecido como o "Gigante Gentil". Eles possuem o que chamamos de "casaco vivo", uma pelagem densa e longa, perfeita para climas frios (mas, se vier para o Brasil, coitado!). Além disso, sua personalidade doce e amigável faz deles excelentes companheiros tanto para crianças quanto para outros animais.
-                        </p>
-                        <p className={style.articleListText}>
-                        Características marcantes:
-                        </p>
-                        <ul className={style.articleListText}>
-                            <li><u>Porte imponente e robusto</u></li>
-                            <li><u>Adoram brincar e são muito carinhosos</u></li>
-                            <li><u>Pelagem que exige escovação regular (rapaz isso não e uma desvantagem?)</u></li>
-                        </ul>
-                        <p><i>Imagem Abaixo Gato Maine Coon</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page1/gato-maine-coon.jpg' alt="Gato Maine Coon, grande e peludo, com orelhas pontudas e cauda longa, em ambiente natural." title='Gato Maine Coon'/>
+                        <h2 className={style.articleListItem}>2. Cebola e Alho</h2>
+                        <p className={style.articleListText}>Cebola e alho, tanto crus quanto cozidos, podem causar danos às células vermelhas do sangue dos gatos, levando a uma condição chamada anemia. O consumo excessivo pode resultar em fraqueza, letargia e problemas respiratórios.</p>
                     </li>
+
                     <li>
-                        <h2 className={style.articleListItem}>3 - Persa</h2>
-                        <p className={style.articleListText}>Famosos por sua pelagem longa e luxuosa e seus rostos achatados, os gatos persas são ícones de elegância e tranquilidade. Eles são mais relaxados e preferem ambientes calmos, tornando-os ideais para famílias que buscam um animal de estimação mais tranquilo. (Confesso que não sou fã dessa raça, mas quando estou perto de um, lá estou eu fazendo carinho na fofura, rsrsrs!)</p>
-                        <p className={style.articleListText}>Características marcantes:</p>
-                        <ul className={style.articleListText}>
-                            <li><u>Aparência sofisticada</u></li>
-                            <li><u>Personalidade calma e afetuosa</u></li>
-                            <li><u>Necessitam de cuidados frequentes com a pelagem</u></li>
-                        </ul>
-                        <p><i>Imagem Abaixo Gato Persa</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page1/gato-persa.jpg' alt="Gato Persa de pelagem densa e longa, com rosto arredondado e expressão tranquila." title='Gato Persa'/>
+                        <h2 className={style.articleListItem}>3. Leite e Produtos Lácteos</h2>
+                        <p className={style.articleListText}>Embora possa parecer estranho dizer que leite faz mal para gatos, algo que eles geralmente adoram, a maioria dos felinos é intolerante à lactose, o que pode causar dores abdominais, diarreia e vômitos. Isso mostra a importância de conhecer bem seu gato. Caso não tenha condições de levá-lo ao veterinário, observe o comportamento, as emoções e as fezes após oferecer leite. Mesmo assim, é melhor evitar e optar por alimentos específicos para gatos.</p>
+                        <img className={style.articleListImg} src='/img/blog/page1/leite.jpg' alt="2 Potes de leite" title='Potes de Leite'/>
                     </li>
+
                     <li>
-                        <h2 className={style.articleListItem}>4 - Bengal</h2>
-                        <p className={style.articleListText}>
-                        Com uma aparência que lembra um gato selvagem, o Bengal é uma raça incrivelmente ativa e cheia de energia. Sua pelagem é manchada ou marmorizada, dando-lhe um visual que remete a leopardos em miniatura. São ideais para pessoas que gostam de animais dinâmicos e brincalhões. Mas cuidado, ter um Bengal é como soltar um furacão na sua casa!
-                        </p>
-                        <p className={style.articleListText}>
-                        Características marcantes:
-                        </p>
-                        <ul className={style.articleListText}>
-                            <li><u>Energéticos e brincalhões</u></li>
-                            <li><u>Altamente inteligentes</u></li>
-                            <li><u>Necessitam de espaço para explorar e brincar (mesma coisa de solta um furação em sua casa)</u></li>
-                        </ul>
-                        <p><i>Imagem Abaixo Gato Bengal</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page1/gato-bengal.jpg' alt="Gato Bengal com pelagem manchada e aparência selvagem, brincando em um ambiente interno." title='Gato Bengal'/>
+                        <h2 className={style.articleListItem}>4. Uvas e Passas</h2>
+                        <p className={style.articleListText}>Uvas e passas podem causar insuficiência renal aguda em gatos, embora os motivos exatos ainda não sejam totalmente compreendidos. Mesmo pequenas quantidades podem ser fatais, então nunca ofereça essas frutas ao seu felino.</p>
                     </li>
+
                     <li>
+                        <h2 className={style.articleListItem}>5. Álcool</h2>
+                        <p className={style.articleListText}>O álcool é altamente tóxico para gatos, podendo causar depressão do sistema nervoso central, dificuldade respiratória e até falência hepática. Mesmo pequenas quantidades de bebidas alcoólicas podem ser perigosas para o seu animal.</p>
+                        <img className={style.articleListImg} src='/img/blog/page1/bebidas-alcoolicas.jpg' alt="Garrafas de Bebidas alcoolicas" title='Garrafas de Bebidas Alcoolicas'/>
                     </li>
+
                     <li>
-                        <h2 className={style.articleListItem}>5 - Ragdoll</h2>
-                        <p className={style.articleListText}>
-                        Apesar de parecerem com os siameses, os Ragdolls possuem características únicas. Conhecidos como "gatos de pano" devido ao hábito de relaxarem completamente quando são pegos no colo, são extremamente gentis e carinhosos. Possuem pelagem semi-longa e olhos azuis hipnotizantes, sendo perfeitos para famílias que procuram um animal afetuoso.
-                        </p>
-                        <p className={style.articleListText}>Características marcantes:</p>
-                        <ul className={style.articleListText}>
-                            <li><u>Personalidade doce e submissa</u></li>
-                            <li><u>Adoram companhia humana</u></li>
-                            <li><u>Fáceis de treinar e adaptáveis</u></li>
-                        </ul>
-                        <p><i>Imagem Abaixo Gato RagDoll</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page1/gato-ragdoll.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
+                        <h2 className={style.articleListItem}>6. Xilitol</h2>
+                        <p className={style.articleListText}>O xilitol é um adoçante artificial encontrado em muitos produtos como balas, gomas de mascar e alimentos sem açúcar. Para os gatos, o xilitol pode causar uma queda rápida nos níveis de açúcar no sangue, levando a convulsões e falência hepática.</p>
+                    </li>
+
+                    <li>
+                        <h2 className={style.articleListItem}>7. Carnes Cruas ou Mal Cozidas</h2>
+                        <p className={style.articleListText}>Embora os gatos sejam carnívoros, carnes cruas ou mal cozidas podem conter bactérias e parasitas que causam intoxicação alimentar, como Salmonella ou E. coli. Afinal, até nós precisamos preparar as carnes para consumo. Se isso não fosse um problema, teríamos vários pratos de carne crua disponíveis no Brasil com frequência.</p>
+                    </li>
+
+                    <li>
+                        <h2 className={style.articleListItem}>8. Ossos de Frango ou Peixe</h2>
+                        <p className={style.articleListText}>Os ossos de frango e peixe podem se quebrar facilmente, causando obstruções ou perfurações no trato digestivo dos gatos. Em desenhos animados, vemos personagens comendo peixes e tirando o esqueleto da boca, mas, na realidade, consumir esses ossos quebradiços representa um risco de asfixia. Por isso, é importante evitar dar esses ossos ao seu felino.</p>
+                    </li>
+
+                    <li>
+                        <h2 className={style.articleListItem}>9. Cafeína</h2>
+                        <p className={style.articleListText}>Você pode ser um amante do café, mas isso não significa que seu gato também seja. Café, chá e outros produtos com cafeína podem afetar o sistema nervoso e cardiovascular dos gatos. Em gatos enérgicos, como o Bengal, a cafeína pode causar agitação, aumento da frequência cardíaca e até convulsões.</p>
+                        <img className={style.articleListImg} src='/img/blog/page1/cafeina.jpg' alt="grão de cafe representado cafeinas" title='grão de café'/>
+                    </li>
+
+                    <li>
+                        <h2 className={style.articleListItem}>10. Alimentos Gordurosos ou Processados</h2>
+                        <p className={style.articleListText}>Comidas ricas em gorduras ou altamente processadas, como fast food e frituras, podem causar obesidade, pancreatite e problemas digestivos nos gatos. Além disso, são ineficazes em fornecer os nutrientes necessários e essenciais para a saúde felina.</p>
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial link1={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'} link2={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}link3={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}/>
+                    <RedeSocial />
                 </div>
-                <div className={style.articleFooter}>
-                    <h3>Qual é a sua raça favorita?</h3>
-                    <p>Bem, tanto defeitos quanto desvantagens, todos os gatos possuem suas qualidades, que os tornam especiais. Mas o que importa é o quanto você ama seus felinos. Apesar da forma discreta com que demonstram seu amor, isso não os torna menos especiais. Por isso, ao escolher um gato, considere seu estilo de vida e o tipo de personalidade que melhor se encaixa na sua família.</p>
-                </div>
+                <footer className={style.articleFooter}>
+                    <div>
+                        <h3>Como Proteger Seu Gato</h3>
+                        <p>A melhor forma de proteger seu gato é educar-se sobre os alimentos que são seguros e saudáveis para ele. Há alimentos que, de forma moderada, podem ser benéficos para o seu felino. Evite dar-lhe alimentos destinados ao consumo humano e, mesmo ao comprar produtos específicos para gatos, leia os rótulos cuidadosamente. Se suspeitar que seu gato ingeriu algo perigoso em excesso, procure imediatamente a orientação de um veterinário.</p>
+                    </div>
+                    <div>
+                        <h3>Conclusão</h3>
+                        <p>A alimentação dos gatos é um fator crucial para sua saúde e bem-estar. Ao manter os alimentos perigosos fora do alcance e oferecer uma dieta balanceada e específica para felinos, você estará garantindo que seu amigo de quatro patas tenha uma vida longa e saudável. Lembre-se: a prevenção é sempre a melhor opção!</p>
+                    </div>
+                </footer>
             </article>
             <Recomendados />
         </div>

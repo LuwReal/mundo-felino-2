@@ -6,8 +6,8 @@ import ProximaPageBlog from './componets/ProximaPageBlog';
 
 function Blogs(){
 
-    let listPost = ["as-5-racas-de-gatos-famosas", "5-gatos-mais-famosos-do-japao", "os-5-ranks-mais-absurdos-dos-gatos", "10-recordes-de-gato-no-guinness-worldrecords",
-        "10-recordes-de-gato-no-guinness-world-records", "maine-coon-tudo-sobre-a-maior-raça-de-gato"
+    let listPost = ["os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato", "5-pragas-que-seu-gato-vai-eliminar-na-sua-casa" , "os-5-ranks-mais-absurdos-dos-gatos", "10-recordes-de-gato-no-guinness-worldrecords",
+        "10-recordes-de-gato-no-guinness-world-records", "maine-coon-tudo-sobre-a-maior-raca-de-gato"
     ]
 
     
@@ -22,18 +22,18 @@ function Blogs(){
             </Helmet>
             <div className={style.conteundoBlogs}>
             {/*Post 1*/}
-           <Post     
-            Imagem={<img className={style.imgPost} src='/img/blog/page1/as-5-raças-de-gatos-mais-famosas-do-mundo.jpg' alt="Ilustração das 5 raças de gatos mais famosas: Siamês, Persa, Maine Coon, Bengal e Ragdoll."/>} 
-            Titulo={'As 5 Raças de Gatos Mais Famosas:'}
-            Paragrafo={'Descubra as 5 raças de gatos mais conhecidas mundialmente e suas características marcantes.'} 
+            <Post 
+            Imagem={<img className={style.imgPost} src='/img/blog/page1/os-10-alimentos-mais-perigosos-para-gatos.jpg' alt="Imagem representativa dos 5 ranks mais absurdos dos gatos em relação a outros animais."/>} 
+            Titulo={'Os 10 Alimentos Perigosos para Gatos'}
+            Paragrafo={'Descubra os 10 alimentos mais perigosos para gatos, os riscos que oferecem à saúde...'} 
             Data={'Publicado em: 22 de Dezembro de 2024'}
             SobreMais={<Link to={`/Blogs/${listPost[0]}`}>Ver Artigo</Link>}
             />
             {/*Post 2*/}
-            <Post 
-            Imagem={<img className={style.imgPost} src='/img/blog/page2/5-gatos-mais-famosos-do-japao-historia-curiosidade.jpg' alt="Imagem representativa dos 5 gatos mais famosos do Japão, incluindo suas histórias e curiosidades."/>} 
-            Titulo={'5 Gatos Mais Famosos do Japão:'}
-            Paragrafo={'Descubra os 5 gatos mais famosos do Japão, símbolos de sorte e cultura, incluindo o Maneki-Neko...'} 
+            <Post     
+            Imagem={<img className={style.imgPost} src='/img/blog/page2/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa.jpg' alt="Ilustração das 5 raças de gatos mais famosas: Siamês, Persa, Maine Coon, Bengal e Ragdoll."/>} 
+            Titulo={'5 Pragas Que Gato Eliminar na Sua Casa'}
+            Paragrafo={'Descubra 5 pragas comuns que seu gato pode eliminar em sua casa de forma natural e eficaz...'} 
             Data={'Publicado em: 22 de Dezembro de 2024'}
             SobreMais={<Link to={`/Blogs/${listPost[1]}`}>Ver Artigo</Link>}
             />

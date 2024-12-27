@@ -1,6 +1,7 @@
 import style from './Recomendados.module.css'
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import ProximaPageBlog from './ProximaPageBlog';
 
 
 function Recomendados(){
@@ -13,7 +14,7 @@ function Recomendados(){
     
       useEffect(() => {
         const handleScroll = () => {
-          if (window.scrollY >= 300) {
+          if (window.scrollY >= 250) {
             setStyle({
               position: 'fixed',
               transform: 'translateY(49%)', 
@@ -33,7 +34,7 @@ function Recomendados(){
       }, []);
 
       const navigate = useNavigate();
-      let listPost = ["as-5-racas-de-gatos-famosas", "5-gatos-mais-famosos-do-japao", "os-5-ranks-mais-absurdos-dos-gatos"]
+      let listPost = ["os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato", "5-pragas-que-seu-gato-vai-eliminar-na-sua-casa", "maine-coon-tudo-sobre-a-maior-raça-de-gato"]
       function link(a){
         navigate(`/Blogs/${listPost[(a)]}`)
       }
@@ -42,34 +43,35 @@ function Recomendados(){
         <div className={style.container}>
             <ul className={style.blogList} style={style2}>
                 <li className={style.blogItem} onClick={() => {link(0)}}>
-                    <img className={style.blogImage} src='/img/blog/page1/as-5-raças-de-gatos-mais-famosas-do-mundo.jpg' alt="Ilustração das 5 raças de gatos mais famosas: Siamês, Persa, Maine Coon, Bengal e Ragdoll."/>
+                    <img className={style.blogImage} src='/img/blog/page1/os-10-alimentos-mais-perigosos-para-gatos.jpg' alt="Ilustração das 5 raças de gatos mais famosas: Siamês, Persa, Maine Coon, Bengal e Ragdoll."/>
                     <div className={style.blogContent}>
-                        <h3>As 5 Raças de Gatos Mais Famosas:</h3>
-                        <p>Já pensou quais são as raça mais procuradas?</p>
-                        <a href="https://exemplo1.com" target="_blank" rel="noopener noreferrer">
-                            Visite o Blog
-                        </a>
+                        <h3>Os 10 Alimentos Perigosos para Gatos</h3>
+                        <p>Descubra os 10 alimentos mais perigosos para gatos, os...</p>
+                        <p><span className={style.stylesP}>Visite o Blog</span></p>
                     </div>
                 </li>
                 <li className={style.blogItem} onClick={() => {link(1)}}>
-                    <img className={style.blogImage} src='/img/blog/page2/5-gatos-mais-famosos-do-japao-historia-curiosidade.jpg' alt="Imagem representativa dos 5 gatos mais famosos do Japão, incluindo suas histórias e curiosidades."/>
+                    <img className={style.blogImage} src='/img/blog/page2/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa.jpg' alt="Imagem representativa dos 5 gatos mais famosos do Japão, incluindo suas histórias e curiosidades."/>
                     <div className={style.blogContent}>
-                        <h3>5 Gatos Mais Famosos do Japão:</h3>
-                        <p>Aprenda mais sobre os gato e a cultura japonesa</p>
-                        <a href="https://exemplo2.com" target="_blank" rel="noopener noreferrer">
-                            Visite o Blog
-                        </a>
+                        <h3>5 Pragas Que Gato Eliminar na Sua Casa</h3>
+                        <p>Descubra 5 pragas comuns que seu gato pode eliminar...</p>
+                        <p><span className={style.stylesP}>Visite o Blog</span></p>
                     </div>
                 </li>
                 <li className={style.blogItem} onClick={() => {link(2)}}>
-                    <img className={style.blogImage} src='/img/blog/page3/os-5-ranks-mais-absurdos-dos-gatos-em-relacao-a-outros-animais.jpg' alt="Imagem representativa dos 5 ranks mais absurdos dos gatos em relação a outros animais."/>
+                    <img className={style.blogImage} src='/img/blog/page6/maine-coon-a-maior-raça-de-gato.jpg' alt="Imagem representativa dos 5 ranks mais absurdos dos gatos em relação a outros animais."/>
                     <div className={style.blogContent}>
-                        <h3>Os 5 Ranks Mais Absurdos Dos Gatos</h3>
-                        <p>Gatos e suas conquistas no reino animal</p>
-                        <a href="https://exemplo3.com" target="_blank" rel="noopener noreferrer">
-                            Visite o Blog
-                        </a>
+                        <h3>Maine Coon: Maior Raça de Gato...</h3>
+                        <p>Conheça o Maine Coon, a maior raça de gato...</p>
+                        <p><span className={style.stylesP}>Visite o Blog</span></p>
                     </div>
+                </li>
+                <li className={style.blogItem}>
+                  <div style={{margin: 'auto'}}>
+                    
+                    <ProximaPageBlog />
+                  </div>
+                  
                 </li>
             </ul>
         </div>

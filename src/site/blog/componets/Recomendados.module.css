@@ -9,6 +9,7 @@
     font-family: Arial, sans-serif;
     display: flex;
     height: 0rem;
+    z-index: 1;
 }
 
 .blogList {
@@ -63,12 +64,12 @@
     color: #666;
 }
 
-.blogContent a {
+.stylesP {
     text-decoration: none;
     color: #0073e6;
     font-size: 0.9rem;
 }
 
-.blogContent a:hover {
+.stylesP:hover {
     color: #005bb5;
 }

@@ -24,7 +24,7 @@ function Page3(){
                         <p className={style.articleListText }>Por que isso é absurdo?</p>
                         <p className={style.articleListText }>Gatos são conhecidos por sua independência e "personalidade forte", mas ainda assim são incrivelmente queridos.</p>
                         <p><i>Imagem Abaixo Gato Maneki Neko</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page3/gato-popula.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
+                        <img className={style.articleListImg} src='/img/blog/page3/gato-popula.jpg' alt="gato usando oculos" title='gato cinza'/>
                     </li>
 
                     <li>
@@ -33,7 +33,7 @@ function Page3(){
                         <p className={style.articleListText }>Por que isso é absurdo?</p>
                         <p className={style.articleListText }>Um animal pequeno e fofinho pode ter um impacto ecológico tão grande que supera outros predadores na natureza.</p>
                         <p><i>Imagem Abaixo Gato Maneki Neko</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page3/gato-caçador.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
+                        <img className={style.articleListImg} src='/img/blog/page3/gato-caçador.jpg' alt="Gato de cor preta com branca observando sua presa que e camundongo" title='Gato e Camundongo'/>
                     </li>
 
                     <li>
@@ -42,7 +42,7 @@ function Page3(){
                         <p className={style.articleListText }>Por que isso é absurdo?</p>
                         <p className={style.articleListText }>Sim, realmente é um absurdo dizer que gatos são menos populares. Pode-se dizer que pandas são populares, mas os gatos continuam sendo os reis indiscutíveis do mundo online.</p>
                         <p><i>Imagem Abaixo Gato Maneki Neko</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page3/gato-redes-sociais.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
+                        <img className={style.articleListImg} src='/img/blog/page3/gato-redes-sociais.jpg' alt="Redes Sociais de gatos Famosos" title='Gatos Famosos'/>
                     </li>
 
                     <li>
@@ -51,7 +51,7 @@ function Page3(){
                         <p className={style.articleListText }>Por que isso é absurdo?</p>
                         <p className={style.articleListText }>Apesar de dormirem a maior parte do tempo, eles ainda conseguem manter uma imagem de mistério e poder.</p>
                         <p><i>Imagem Abaixo Gato Maneki Neko</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page3/gato-dormindo.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
+                        <img className={style.articleListImg} src='/img/blog/page3/gato-dormindo.jpg' alt="Gato dormindo em cima de um sofa" title='Gato dormindo'/>
                     </li>
                     <li>
                         <h2 className={style.articleListItem}>5 - Animais com Reflexos Mais Rápidos</h2>
@@ -59,7 +59,7 @@ function Page3(){
                         <p className={style.articleListText }>Por que isso é absurdo?</p>
                         <p className={style.articleListText }>Pequenos e aparentemente frágeis, os gatos têm reflexos que rivalizam com os de predadores muito maiores, como os guepardos.</p>
                         <p><i>Imagem Abaixo Gato Maneki Neko</i></p>
-                        <img className={style.articleListImg} src='/img/blog/page3/gato-reflexo.jpg' alt="Gato Ragdoll de pelagem longa e macia, com olhos azuis e postura relaxada." title='Gato RagDoll'/>
+                        <img className={style.articleListImg} src='/img/blog/page3/gato-reflexo.jpg' alt="gato deitado em uma pedra usando oculos" title='gato deitado em um pedra'/>
                     </li>
                 </ul>
                 <div className={style.redesSocial}>

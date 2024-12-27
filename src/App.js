@@ -1,6 +1,7 @@
 import Menu from './site/nav/Menu';
 import Blogs from './site/blog/Blogs';
 import BlogsPage2 from './site/blog/BlogsPage2';
+import BlogPageZero from './site/blog/BlogPageZero';
 import Produtos from './site/loja/Produtos';
 import Sobre from './site/sobre/Sobre';
 import Contato from './site/Contato/Contato';
@@ -10,8 +11,9 @@ import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
 import { useEffect } from 'react';
 /*Pages */
-import { Page1, Page2, Page3, Page4, Page5, Page6, Page7 } from './site/blog/ConteudoBlog/index'
+import { Page1, Page2, Page3, Page4, Page5, Page6, Page7, Page8, Page9, Page10, Page11, Page12 } from './site/blog/ConteudoBlog/index'
 import './App.css';
+
 
 function App() {
 
@@ -19,7 +21,7 @@ function App() {
   function ScrollToTop() {
     const location = useLocation(); 
     useEffect(() => {
-      if (TituloBlog.some(blog => location.pathname === `/Blogs/${blog}`)){
+      if (TituloBlog.some(blog => location.pathname === `/Blogs/${blog}`) || TituloBlogPage2.some(blog => location.pathname === `/Blogs-Page2/${blog}`)){
         window.scrollTo(0, 280);
       }else{
         window.scrollTo(0, 0);
@@ -28,19 +30,20 @@ function App() {
     }, [location]);
     return null;
   }
-
+ 
 
   /*BlogPage1 */
-  let BlogConteudos = [<Page1 />, <Page2 />, <Page3 />, <Page4 />, <Page5 />, <Page6 />]
-  let TituloBlog = ["as-5-racas-de-gatos-famosas", "5-gatos-mais-famosos-do-japao", "os-5-ranks-mais-absurdos-dos-gatos", "10-recordes-de-gato-no-guinness-worldrecords",
-    "10-recordes-de-gato-no-guinness-world-records", "maine-coon-tudo-sobre-a-maior-raça-de-gato"
+  let BlogConteudos = [ <Page1 />, <Page2 />, <Page3 />, <Page4 />, <Page5 />, <Page6 />]
+  let TituloBlog = [ "os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato", "5-pragas-que-seu-gato-vai-eliminar-na-sua-casa", "os-5-ranks-mais-absurdos-dos-gatos", "10-recordes-de-gato-no-guinness-worldrecords",
+    "10-recordes-de-gato-no-guinness-world-records", "maine-coon-tudo-sobre-a-maior-raca-de-gato"
   ]
   /*BlogPage2 */
-  let BlogConteudosPage2 = [<Page7 />, <Page7 />, <Page7 />, <Page7 />, <Page7 />, <Page7 />]
-  let TituloBlogPage2 = ["Page7", "5-gatos-mais-famosos-do-japao", "os-5-ranks-mais-absurdos-dos-gatos", "10-recordes-de-gato-no-guinness-worldrecords",
-    "10-recordes-de-gato-no-guinness-world-records", "maine-coon-tudo-sobre-a-maior-raça-de-gato"
+  let BlogConteudosPage2 = [<Page7 />, <Page8 />, <Page9 />, <Page10 />, <Page11 />,<Page12 />]
+  let TituloBlogPage2 = ["5-gatos-mais-famosos-do-japao" , "5-provas-que-os-reflexos-do-gato-demonstram-sua-superioridade", "5-razões-que-tornaram-os-gatos-essenciais-na-cultura-japonesa", "gato-bengal-o-exotico-gato-que-encanta-com-sua-beleza-selvagem",
+    "5-motivos-por-que-os-gatos-são-melhores-que-os-cães","as-5-racas-de-gatos-famosas"
   ]
-  
+
+
 
   return (
     <HelmetProvider>
@@ -48,7 +51,7 @@ function App() {
         
         <Router>
           <ScrollToTop />
-          <Menu Loja={<Link to="/"><span className="menuNavTitulo">Loja</span></Link>}
+          <Menu Loja={<Link to="/loja"><span className="menuNavTitulo">Loja</span></Link>}
           Blog={<Link to="/Blogs"><span className="menuNavTitulo">Blogs</span></Link>}
           Sobre={<Link to="/Sobre"><span className="menuNavTitulo">Sobre</span></Link>}
           Contato={<Link to="/Contato"><span className="menuNavTitulo">Contato</span></Link>}
@@ -71,11 +74,11 @@ function App() {
 
 
             <Route path="/Sobre" element={<Sobre />}/>
-            <Route path="/" element={<Produtos />} />
+            <Route path="/loja" element={<Produtos />} />
             <Route path="/Blogs" element={<Blogs />} />
             <Route path="/Blogs-Page2" element={<BlogsPage2 />} />
-            <Route path="/Blogs-Page3" element={<BlogsPage2 />} />
-            <Route path="/Blogs-Page4" element={<BlogsPage2 />} />
+            <Route path="/Blogs-Page3" element={<BlogPageZero />} />
+            <Route path="/Blogs-Page4" element={<BlogPageZero />} />
             <Route path="/Contato" element={<Contato />} />
             <Route path="/Politica-E-Privacidades" element={<PoliticaEPrivacidade />} />
           </Routes>

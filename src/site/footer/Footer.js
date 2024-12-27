@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Footer(){
     return(
-        <div className={style.container}>
+        <footer className={style.container}>
             <div>
                 <h5>Mundo Felino 2</h5>
                 <ul>
@@ -28,7 +28,7 @@ function Footer(){
                     <li><Link to="/Politica-E-Privacidades" style={{color: '#fff', textDecoration: 'none'}}>Cookies</Link></li>
                 </ul>
             </div>
-        </div>
+        </footer>
     )
 }
 export default Footer

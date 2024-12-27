@@ -9,7 +9,9 @@
   border: 5px solid transparent;
   border-radius: 8px;
   transition: border ease 1s;
+
 }
 .menuNavTitulo:hover{
   border: 5px solid white;
+ 
 }

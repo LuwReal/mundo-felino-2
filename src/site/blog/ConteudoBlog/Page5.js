@@ -24,7 +24,7 @@ function Page5(){
                         <h2 className={style.articleListItem}>Comportamento e Personalidade</h2>
                         <p className={style.articleListText}>Os gatos siameses são conhecidos por sua natureza extremamente sociável e afetuosa. Apesar de seu jeito simples e simpático, eles tendem a buscar a socialização com seus donos com mais frequência do que outras raças, de forma gentil, podendo se tornar muito apegados aos seus donos, buscando constantemente atenção e companhia. Por isso, tendem a miar mais frequentemente, o que se torna uma característica marcante, com miados um pouco mais altos e sonoros do que os dos gatos comuns.</p>
                         <p className={style.articleListText}>Além disso, os siameses são gatos inteligentes. Isso ocorre devido à sua curiosidade, o que faz com que seu desenvolvimento intelectual seja bem desenvolvido. Juntando sua curiosidade e apego, eles se adaptam facilmente a novos ambientes e se envolvem em brincadeiras com seus donos para chamar a atenção.</p>             
-                        <img className={style.articleListImg} src='/img/blog/page5/gato-siames-1.jpg' alt="Gata Alimentando seus Filhotes" title='Gata Com Filhotes'/>
+                        <img className={style.articleListImg} src='/img/blog/page5/gato-siames-1.jpg' alt="Gato siames olhando diretamente para o visor da camera" title='gato siames'/>
                     </li>
 
                     <li>
@@ -36,13 +36,13 @@ function Page5(){
                         <h2 className={style.articleListItem}>Saúde</h2>
                         <p className={style.articleListText}>Os gatos siameses são, em geral, uma raça saudável, mas como todas as raças, podem ser propensos a algumas condições de saúde específicas. Por isso, deve-se ter um cuidado extra, principalmente com problemas respiratórios devido à sua estrutura facial, problemas cardíacos (como a cardiomiopatia hipertrofica) e doenças oculares, como o estrabismo.</p>
                         <p className={style.articleListText}>Nota: as informações são de caráter informativo e não devem ser usadas como orientação. Em caso de dúvida, leve seu animal a um veterinário mais próximo.</p>
-                        <img className={style.articleListImg} src='/img/blog/page5/gato-siames-2.jpg' alt="Gata Alimentando seus Filhotes" title='Gata Com Filhotes'/>
+                        <img className={style.articleListImg} src='/img/blog/page5/gato-siames-2.jpg' alt="gato siames de tons de cores escura no rosto e corpo meio berge olhando parao visor da camera" title='Gato Siames'/>
                     </li>
 
                     <li>
                         <h2 className={style.articleListItem}>História</h2>
                         <p className={style.articleListText}>Nessa altura do campeonato, você já deve ter percebido que a estrutura diferente do gato tradicional siamês tem alguma origem. Acredita-se que sua origem seja no Sudoeste Asiático, na Tailândia. Por sua beleza incomum, eram vistos somente na realeza e em templos sagrados. Nesta região, são conhecidos como Diamante-Lua, o que realmente combina com sua aparência. De lá, foram levados à Inglaterra pelos colonizadores em 1884, de onde se espalharam. Em 2007, uma variação desses gatos siameses, conhecida popularmente como Old Style ou Traditional, ganhou reconhecimento pela TICA como uma nova raça à parte, chamada Thai. São conhecidos desde 1330, sendo mencionados em um poema, "Livro de Poemas do Gato", que relata que estavam exclusivamente nas mãos da realeza.</p>
-                        <img className={style.articleListImg} src='/img/blog/page5/gato-siames-3.jpg' alt="Gata Alimentando seus Filhotes" title='Gata Com Filhotes'/>
+                        <img className={style.articleListImg} src='/img/blog/page5/gato-siames-3.jpg' alt="Mãe gata da raça siames com seus filhotes brincando" title='Mãe Gata e Seus Filhotes'/>
                     </li>
                     
                 </ul>

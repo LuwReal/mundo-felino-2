@@ -1,7 +1,7 @@
 import style from './Menu.module.css'
 import { useState } from 'react'
 
-function Menu({Loja, Blog, Sobre, Contato}){
+function Menu({Loja, Blog, Sobre, Contato, teste}){
 
     let [ativa, setAtiva] = useState('none')
 
@@ -20,18 +20,23 @@ function Menu({Loja, Blog, Sobre, Contato}){
     }
 
     return(
-        <div className={style.container}>
+        <header className={style.container}>
             <div className={style.containerMenu}>
                 <img className={style.logoTipoMundoFelino2} src='/img/mundo-felino-2.png' alt='Imagem da Logo do Mundo Felino 2' />
                 <div>
                     <h1 className={style.Titulo}>Mundo Felino 2</h1>
                     <nav>
+                        <div>
                         {Loja}
                         {Blog}
                         {Sobre}
-                        {Contato}
+                        {Contato} 
+                        </div>
+                        <div>
+                            {teste}
+                        </div>
                     </nav>
-                    
+
                 </div>
                 <div className={style.menuSocial} onClick={AtivaMenu}>
                     <div className={style.span}></div>
@@ -47,7 +52,7 @@ function Menu({Loja, Blog, Sobre, Contato}){
                     <p>video 3</p> 
                 </div>
             </div>
-        </div>
+        </header>
     )
 }
 

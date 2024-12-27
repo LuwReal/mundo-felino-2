@@ -1,5 +1,6 @@
 .container{
     height: 10rem;
+    width: 82.7rem;
     background-color: #333; 
     color: white;
     text-align: center; 
@@ -7,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 }
 .container ul{
     list-style-type: none;
