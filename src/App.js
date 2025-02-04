@@ -7,6 +7,7 @@ import Sobre from './site/sobre/Sobre';
 import Contato from './site/Contato/Contato';
 import Footer from './site/footer/Footer';
 import PoliticaEPrivacidade from './site/PoliticaEPrivacidade/PoliticaEPrivacidade';
+import CookieConsent from "react-cookie-consent";
 import { HelmetProvider } from 'react-helmet-async';
 import { BrowserRouter as Router, Route, Routes, Link, useLocation} from 'react-router-dom';
 import { useEffect } from 'react';
@@ -56,6 +57,17 @@ function App() {
           Sobre={<Link to="/Sobre"><span className="menuNavTitulo">Sobre</span></Link>}
           Contato={<Link to="/Contato"><span className="menuNavTitulo">Contato</span></Link>}
           />
+          <CookieConsent
+      location="bottom"
+      buttonText="Aceitar"
+      style={{ background: "#2B373B" }}
+      buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+    >
+      Este site utiliza cookies para melhorar sua experiência.{" "}
+      <a href="/politica-e-privacidades" style={{ color: "white" }}>
+        Saiba mais
+            </a>
+          </CookieConsent>
           <Routes>
             {/*Page1*/}
             <Route path={`/Blogs/${TituloBlog[0]}`} element={BlogConteudos[0]}/>
@@ -72,7 +84,7 @@ function App() {
             <Route path={`/Blogs-Page2/${TituloBlogPage2[4]}`} element={BlogConteudosPage2[4]}/>
             <Route path={`/Blogs-Page2/${TituloBlogPage2[5]}`} element={BlogConteudosPage2[5]}/>
 
-
+            <Route path="/" element={<Blogs />}/>
             <Route path="/Sobre" element={<Sobre />}/>
             <Route path="/loja" element={<Produtos />} />
             <Route path="/Blogs" element={<Blogs />} />
@@ -80,7 +92,7 @@ function App() {
             <Route path="/Blogs-Page3" element={<BlogPageZero />} />
             <Route path="/Blogs-Page4" element={<BlogPageZero />} />
             <Route path="/Contato" element={<Contato />} />
-            <Route path="/Politica-E-Privacidades" element={<PoliticaEPrivacidade />} />
+            <Route path="/politica-e-privacidades" element={<PoliticaEPrivacidade />} />
           </Routes>
           <Footer />
         </Router>

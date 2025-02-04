@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial'
 import style from './Page11.module.css'
 
@@ -11,7 +12,7 @@ function Page11(){
                 <meta name="description" content="Descubra 5 motivos incríveis que provam por que os gatos são melhores que os cães. Saiba mais sobre independência, higiene, custos e outras vantagens de ter um gato como pet." />
                 <meta property="og:title" content="5 Motivos Por Que os Gatos São Melhores que os Cães" />
                 <meta property="og:description" content="Descubra 5 motivos incríveis que provam por que os gatos são melhores que os cães. Saiba mais sobre independência, higiene, custos e outras vantagens de ter um gato como pet." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs-Page2/5-motivos-por-que-os-gatos-s%C3%A3o-melhores-que-os-c%C3%A3es" />
                 <title>5 Motivos Por Que os Gatos São Melhores que os Cães</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -47,13 +48,16 @@ function Page11(){
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial />
+                    <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs-Page2/5-motivos-por-que-os-gatos-s%C3%A3o-melhores-que-os-c%C3%A3es"} link2={"https://mundo-felino-2.com.br/Blogs-Page2/5-motivos-por-que-os-gatos-s%C3%A3o-melhores-que-os-c%C3%A3es"} link3={"https://mundo-felino-2.com.br/Blogs-Page2/5-motivos-por-que-os-gatos-s%C3%A3o-melhores-que-os-c%C3%A3es"}/>
                 </div>
                 <div className={style.articleFooter}>
                     <p>Por essas e outras razões, os gatos conquistam cada vez mais admiradores. No entanto, a escolha entre gatos e cães depende do estilo de vida e das preferências de cada pessoa.</p>
                 </div>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

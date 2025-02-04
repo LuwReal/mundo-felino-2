@@ -1,7 +1,15 @@
+import { Helmet } from 'react-helmet-async'
 import style from './Produtos.module.css'
 function Produtos(){
     return(
         <div className={style.container}>
+            <Helmet>
+                <meta name="description" content="Venha conhece a Loja Do Mundo Felino 2" />
+                <meta property="og:title" content="Loja Mundo Felino 2" />
+                <meta property="og:description" content="Venha conhece a Loja Do Mundo Felino 2" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/loja" />
+                <title>Loja</title>
+            </Helmet>
             <div>
                 <h2>Cat Shoope</h2>
                 <ul>

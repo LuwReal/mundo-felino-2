@@ -1,5 +1,6 @@
 import style from './Page4.module.css'
 import Recomendados from '../componets/Recomendados';
+import Recomendados2 from '../componets/Recomendados2'
 import { Helmet } from 'react-helmet-async';
 import RedeSocial from '../componets/RedeSocial';
 
@@ -12,7 +13,7 @@ function Page4(){
                 <meta name="description" content="Descubra 10 recordes incríveis de gatos no Guinness World Records, incluindo o gato mais velho, mais longo, mais pesado e muitos outros feitos impressionantes!" />
                 <meta property="og:title" content="10 Recordes de Gato Impressionantes no Guinness World Records" />
                 <meta property="og:description" content="Descubra 10 recordes incríveis de gatos no Guinness World Records, incluindo o gato mais velho, mais longo, mais pesado e muitos outros feitos impressionantes!" />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-worldrecords" />
                 <title>10 Recordes de Gato no Guinness World Records</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -89,13 +90,16 @@ function Page4(){
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-worldrecords"} link2={"https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-worldrecords"} link3={"https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-worldrecords"}/>
                 </div>
                 <footer className={style.articleFooter}>
                     <p className={style.articleListText}>Esses recordes não apenas destacam as incríveis habilidades e características dos gatos, mas também mostram como esses animais são verdadeiramente únicos e fascinantes. Seja pela sua destreza, longevidade ou pelos feitos surpreendentes, os gatos continuam a cativar e inspirar pessoas ao redor do mundo.</p>
                 </footer>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

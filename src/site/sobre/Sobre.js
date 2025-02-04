@@ -1,17 +1,27 @@
 import React from 'react';
 import style from './Sobre.module.css';
+import { Helmet } from 'react-helmet-async';
 function Sobre() {
 
   const conquistas = [
-    { id: 1, nome: "Conquista Em Andamento", imagem: "img.png" },
-    { id: 2, nome: "Conquista Em Andamento", imagem: "img.png" },
-    { id: 3, nome: "Conquista Em Andamento", imagem: "img.png" },
-    { id: 4, nome: "Conquista Em Andamento", imagem: "img.png" },
+    { id: 1, nome: "65.000 mil Visualições No Youtube", imagem: "./img/youtubeLogo.jpg" },
+    { id: 2, nome: "750 inscritos No Youtube", imagem: "./img/youtubeLogo.jpg" },
+    { id: 3, nome: "25.000 mil Visualizações no Kwai", imagem: "./img/kwaiLogo.jpg" },
+    { id: 4, nome: "100 Seguidores no Kwai", imagem: "./img/kwaiLogo.jpg" },
+    { id: 5, nome: "50 Videos Curtos Postados", imagem: "./img/videopostadoLogo.jpg" },
+    { id: 5, nome: "2.512 visualizações No TikTok", imagem: "./img/tiktokLogo.jpg" },
   ];
 
 
   return (
     <div className={style.container}>
+      <Helmet>
+        <meta name="description" content="Conheça mais Sobre o projeto Mundo Felino 2" />
+        <meta property="og:title" content="Sobre Mundo Felino 2" />
+        <meta property="og:description" content="Conheça mais Sobre o projeto Mundo Felino 2" />
+        <meta property="og:url" content="https://mundo-felino-2.com.br/Sobre" />
+        <title>Sobre</title>
+      </Helmet>
       <div className={style.containerSobre}>
         <h1 className={style.sobreTitulos}>Sobre o Blog</h1>
         <p className={style.sobreParagrafo}>Bem-vindo ao <b>Mundo dos Felinos 2!</b> Nosso blog é dedicado a todos que compartilham o amor e a curiosidade pelos gatos. Aqui, exploramos o fascinante universo dos felinos, trazendo conteúdos sobre curiosidades, comportamento, e muito mais.
@@ -20,7 +30,7 @@ function Sobre() {
         <div className={style.containerPerfil}>
             <img
               className={style.perfilImage}
-              src="link_da_imagem_do_criador.jpg"
+              src="/img/lucas-luwreal.png"
               alt="Foto do Criador"
             />
             <div className={style.perfilInfor}>
@@ -30,7 +40,11 @@ function Sobre() {
               </p>
                 <div className={style.container2}>
                     <p>Redes Sociais:</p>
-                    <a href='https://www.instagram.com/diverteck/profilecard/?igsh=Z3NtMXJ3NHcxZ2M4' target="_blank" rel="noopener noreferrer"><img className={style.logoRedesSocial} src='./img/instagremLogo.jpg' alt='Logo Instagram'/></a>
+                    <a href='https://www.instagram.com/lucas.luwreal/' target="_blank" rel="noopener noreferrer"><img className={style.logoRedesSocial} src='./img/instagremLogo.jpg' alt='Logo Instagram'/></a>
+                    <a href='https://www.kwai.com/@lucas_luwreal' target="_blank" rel="noopener noreferrer"><img className={style.logoRedesSocial} src='./img/kwaiLogo.jpg' alt='Logo kwai'/></a>
+                    <a href='https://youtube.com/@lucas_luwreal?si=d6tusDvMCpvwyoPR' target="_blank" rel="noopener noreferrer"><img className={style.logoRedesSocial} src='./img/youtubeLogo.jpg' alt='Logo Youtube'/></a>
+                    <a href='https://www.tiktok.com/@luwreal?_t=ZM-8tcYn17qPyg&_r=1' target="_blank" rel="noopener noreferrer"><img className={style.logoRedesSocial} src='./img/tiktokLogo.jpg' alt='Logo TikTok'/></a>
+                    <a href='https://github.com/LuwReal' target="_blank" rel="noopener noreferrer"><img className={style.logoRedesSocial} src='./img/githubLogo.jpg' alt='Logo GitHub'/></a>
                 </div>
             </div>
         </div>

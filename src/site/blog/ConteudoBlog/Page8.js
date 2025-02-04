@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import style from './Page8.module.css'
 import RedeSocial from '../componets/RedeSocial'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 
 function Page8(){
     return(
@@ -10,7 +11,7 @@ function Page8(){
                 <meta name="description" content="Descubra 5 provas incríveis que mostram como os reflexos dos gatos os tornam seres superiores no reino animal. Surpreenda-se com sua agilidade e habilidades únicas!" />
                 <meta property="og:title" content="5 Provas Que Os Reflexos Do Gato Demonstram Sua Superioridade" />
                 <meta property="og:description" content="Descubra 5 provas incríveis que mostram como os reflexos dos gatos os tornam seres superiores no reino animal. Surpreenda-se com sua agilidade e habilidades únicas!" />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs-Page2/5-provas-que-os-reflexos-do-gato-demonstram-sua-superioridade" />
                 <title>5 Provas Que Os Reflexos Do Gato Demonstram Sua Superioridade</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -52,14 +53,17 @@ function Page8(){
                     <img className={style.articleListImg} src='/img/blog/page8/gato-brincando.jpg' alt="Filhote de Gato Brincando com Briquedo" title='Filhote de Gato Brincado'/>
                 </ul>
                 <div className={style.redesSocial}>
-                     <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs-Page2/5-provas-que-os-reflexos-do-gato-demonstram-sua-superioridade"} link2={"https://mundo-felino-2.com.br/Blogs-Page2/5-provas-que-os-reflexos-do-gato-demonstram-sua-superioridade"} link3={"https://mundo-felino-2.com.br/Blogs-Page2/5-provas-que-os-reflexos-do-gato-demonstram-sua-superioridade"}/>
                 </div>
                 <div className={style.articleFooter}>
                     <h3>Conclusão</h3>
                     <p>Os reflexos dos gatos são uma combinação de instinto, biologia e inteligência. Isso os faz serem superiores em diversos aspectos no reino animal, tendo até impacto biológico no mundo. Em questão de eliminação de pragas, gatos podem eliminar bilhões de pragas todos os anos.</p>
                 </div>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

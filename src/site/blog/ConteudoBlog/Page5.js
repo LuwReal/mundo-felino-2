@@ -1,4 +1,5 @@
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial'
 import { Helmet } from 'react-helmet-async'
 import style from './Page5.module.css'
@@ -10,7 +11,7 @@ function Page5(){
                 <meta name="description" content="Saiba tudo sobre o verdadeiro gato Siamês puro! Descubra suas características únicas, curiosidades fascinantes e dicas essenciais de cuidados neste guia completo." />
                 <meta property="og:title" content="Descubra o Verdadeiro Gato Siamês (Puro): Guia Completo com Curiosidades e Cuidados!" />
                 <meta property="og:description" content="Saiba tudo sobre o verdadeiro gato Siamês puro! Descubra suas características únicas, curiosidades fascinantes e dicas essenciais de cuidados neste guia completo." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-world-records" />
                 <title>10 Recordes de Gato no Guinness World Records</title>
             </Helmet>
             <article className={style.articleContainer}>  
@@ -47,14 +48,17 @@ function Page5(){
                     
                 </ul>
                 <div className={style.redesSocial}>
-                     <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-world-records"} link2={"https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-world-records"} link3={"https://mundo-felino-2.com.br/Blogs/10-recordes-de-gato-no-guinness-world-records"}/>
                 </div>
                 <footer className={style.articleFooter}>
                         <h2>Conclusão</h2>
                         <p className={style.articleListText}>O gato siamês é uma escolha popular para famílias e indivíduos que buscam um companheiro leal, amoroso e enérgico. Sua personalidade marcante e aparência única fazem dele um dos felinos mais especiais do mundo, principalmente seu rosto, que transmite um toque de elegância. Com os cuidados adequados, o siamês pode ser um membro adorável e duradouro da família.</p>
                 </footer>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

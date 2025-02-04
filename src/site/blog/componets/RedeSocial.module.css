@@ -15,3 +15,13 @@
 .botoes{
     margin: 0.6rem 0 0 0.5rem;
 }
+@media (max-width: 700px) {
+    .container{
+        width: auto;
+    }
+}
+@media (max-width: 391px) {
+    .container{
+        height: auto;
+    }
+}

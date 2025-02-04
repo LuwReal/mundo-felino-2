@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async'
 import style from './PoliticaEPrivacidade.module.css'
 
 function PoliticaEPrivacidade(){
@@ -11,6 +12,13 @@ function PoliticaEPrivacidade(){
 
     return(
         <div className={style.container}>
+            <Helmet>
+                <meta name="description" content="Política e Privacidade Mundo Felino 2" />
+                <meta property="og:title" content="Política e Privacidade Mundo Felino 2" />
+                <meta property="og:description" content="Política e Privacidade Mundo Felino 2" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/politica-e-privacidades" />
+                <title>Política e Privacidade Mundo Felino 2</title>
+            </Helmet>
             <div className={style.sumario}>
                 <h4>Sumário</h4>
                 <ul>

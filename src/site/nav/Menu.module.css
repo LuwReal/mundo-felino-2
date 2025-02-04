@@ -57,10 +57,48 @@
 }
 .subMenuConteudo{
   z-index: 2;
-  width: 15rem;
+  width: 18rem;
   padding-top: 5rem;
   height: 100%;
   color: rgb(224, 237, 248);
   background-color: rgba(0, 0, 0, 0.8);
  
+}
+.subMenuConteudo a{
+ text-decoration: none;
+ color: #ddd;
+ border: 2px solid #03a8e8 
+
+}
+@media (max-width: 900px) {
+  .containerMenu{
+    width: 99%;
+  }
+}
+@media (max-width: 800px) {
+  .logoTipoMundoFelino2{
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .span{
+    display: none;
+  }
+  .Titulo{
+    font-size: 2rem;
+  }
+  .containerMenu{
+    box-shadow:none;
+    padding: 0px;
+    width: 100%;
+    display: block;
+    justify-content: none;
+    align-items: none;
+  }
+}
+@media (max-width: 350px) {
+  .divNav{
+    flex-wrap: wrap;
+    display: flex;
+  }
 }

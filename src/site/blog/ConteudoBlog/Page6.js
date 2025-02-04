@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async'
 import style from './Page6.module.css'
 import RedeSocial from '../componets/RedeSocial'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 
 function Page6(){
     return(
@@ -10,7 +11,7 @@ function Page6(){
                 <meta name="description" content="Conheça o Maine Coon, a maior raça de gato doméstico! Descubra suas características, curiosidades e cuidados essenciais neste guia completo." />
                 <meta property="og:title" content="Maine Coon: Tudo Sobre a Maior Raça de Gato Doméstico!" />
                 <meta property="og:description" content="Conheça o Maine Coon, a maior raça de gato doméstico! Descubra suas características, curiosidades e cuidados essenciais neste guia completo." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs/maine-coon-tudo-sobre-a-maior-raca-de-gato" />
                 <title>Maine Coon: Tudo Sobre a Maior Raça de Gato Doméstico!</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -36,14 +37,17 @@ function Page6(){
                     
                 </ul>
                 <div className={style.redesSocial}>
-                     <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs/maine-coon-tudo-sobre-a-maior-raca-de-gato"} link2={"https://mundo-felino-2.com.br/Blogs/maine-coon-tudo-sobre-a-maior-raca-de-gato"} link3={"https://mundo-felino-2.com.br/Blogs/maine-coon-tudo-sobre-a-maior-raca-de-gato"}/>
                 </div>
                 <footer className={style.articleFooter}>
                         <h3>Cuidado</h3>
                         <p>Devido ao seu tamanho, o Maine Coon exige uma alimentação superior à de gatos de tamanhos menores. Portanto, esteja avisado sobre a alimentação dele e ciente de seus custos.</p>
                 </footer>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

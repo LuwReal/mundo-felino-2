@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial'
 import style from './Page1.module.css'
 
@@ -10,7 +11,7 @@ function Page1(){
                 <meta name="description" content="Descubra os 10 alimentos mais perigosos para gatos, os riscos que oferecem à saúde felina e como proteger seu pet. Garanta uma vida longa e saudável ao seu gato com dicas essenciais." />
                 <meta property="og:title" content="Os 10 Alimentos Mais Perigosos para Gatos" />
                 <meta property="og:description" content="Descubra os 10 alimentos mais perigosos para gatos, os riscos que oferecem à saúde felina e como proteger seu pet. Garanta uma vida longa e saudável ao seu gato com dicas essenciais." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs/os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato" />
                 <title>Os 10 Alimentos Mais Perigosos para Gatos</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -20,7 +21,7 @@ function Page1(){
                     <li>
                         <h2 className={style.articleListItem}>1. Chocolate</h2>
                         <p className={style.articleListText}>O chocolate contém teobromina, uma substância altamente tóxica para gatos. Lembro da vez que dei uma bolinha de cereal com chocolate para um pet pequeno, e no outro dia ele havia falecido. Nunca mais dei chocolate para animais. Mesmo pequenas quantidades podem causar vômitos, diarreia, tremores e, em casos graves, danos ao sistema nervoso e até a morte. Mantenha qualquer produto que contenha chocolate fora do alcance do seu gato.</p>
-                        <img className={style.articleListImg} src='/img/blog/page1/chocolate.jpg' alt="Trufas de Chocolate em Ordem" title='Trufas de Chocolate'/>
+                        <img className={style.articleListImg} src='/img/blog/page1/imagem1.jpg' alt="Trufas de Chocolate em Ordem" title='Trufas de Chocolate'/>
                     </li>
 
                     <li>
@@ -31,7 +32,7 @@ function Page1(){
                     <li>
                         <h2 className={style.articleListItem}>3. Leite e Produtos Lácteos</h2>
                         <p className={style.articleListText}>Embora possa parecer estranho dizer que leite faz mal para gatos, algo que eles geralmente adoram, a maioria dos felinos é intolerante à lactose, o que pode causar dores abdominais, diarreia e vômitos. Isso mostra a importância de conhecer bem seu gato. Caso não tenha condições de levá-lo ao veterinário, observe o comportamento, as emoções e as fezes após oferecer leite. Mesmo assim, é melhor evitar e optar por alimentos específicos para gatos.</p>
-                        <img className={style.articleListImg} src='/img/blog/page1/leite.jpg' alt="2 Potes de leite" title='Potes de Leite'/>
+                        <img className={style.articleListImg} src='/img/blog/page1/imagem2.jpg' alt="2 Potes de leite" title='Potes de Leite'/>
                     </li>
 
                     <li>
@@ -42,7 +43,7 @@ function Page1(){
                     <li>
                         <h2 className={style.articleListItem}>5. Álcool</h2>
                         <p className={style.articleListText}>O álcool é altamente tóxico para gatos, podendo causar depressão do sistema nervoso central, dificuldade respiratória e até falência hepática. Mesmo pequenas quantidades de bebidas alcoólicas podem ser perigosas para o seu animal.</p>
-                        <img className={style.articleListImg} src='/img/blog/page1/bebidas-alcoolicas.jpg' alt="Garrafas de Bebidas alcoolicas" title='Garrafas de Bebidas Alcoolicas'/>
+                        <img className={style.articleListImg} src='/img/blog/page1/imagem4.jpg' alt="Garrafas de Bebidas alcoolicas" title='Garrafas de Bebidas Alcoolicas'/>
                     </li>
 
                     <li>
@@ -63,16 +64,16 @@ function Page1(){
                     <li>
                         <h2 className={style.articleListItem}>9. Cafeína</h2>
                         <p className={style.articleListText}>Você pode ser um amante do café, mas isso não significa que seu gato também seja. Café, chá e outros produtos com cafeína podem afetar o sistema nervoso e cardiovascular dos gatos. Em gatos enérgicos, como o Bengal, a cafeína pode causar agitação, aumento da frequência cardíaca e até convulsões.</p>
-                        <img className={style.articleListImg} src='/img/blog/page1/cafeina.jpg' alt="grão de cafe representado cafeinas" title='grão de café'/>
+                        <img className={style.articleListImg} src='/img/blog/page1/imagem3.jpg' alt="grão de cafe representado cafeinas" title='grão de café'/>
                     </li>
 
                     <li>
                         <h2 className={style.articleListItem}>10. Alimentos Gordurosos ou Processados</h2>
-                        <p className={style.articleListText}>Comidas ricas em gorduras ou altamente processadas, como fast food e frituras, podem causar obesidade, pancreatite e problemas digestivos nos gatos. Além disso, são ineficazes em fornecer os nutrientes necessários e essenciais para a saúde felina.</p>
+                        <p className={style.articleListText}>Comidas ricas em gorduras ou altamente processadas, como fast food e frituras, podem causar obesidade, pancreatite e problemas digestivos nos gatos. Além disso, são ineficazes em fornecer os nutrientes necessários e essenciais para a saúde felina!.</p>
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs/os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato"} link2={"https://mundo-felino-2.com.br/Blogs/os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato"} link3={"https://mundo-felino-2.com.br/Blogs/os-10-alimentos-mais-perigosos-para-gatos-proteja-o-seu-gato"}/>
                 </div>
                 <footer className={style.articleFooter}>
                     <div>
@@ -85,7 +86,10 @@ function Page1(){
                     </div>
                 </footer>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+             <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

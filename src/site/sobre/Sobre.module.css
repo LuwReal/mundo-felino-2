@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
@@ -37,9 +37,11 @@
   margin-bottom: 30px;
 }
 .perfilImage{
-  width: 80rem;
+  width: auto;
   height: 10rem;
   background-color: red;
+  scale: 1.1;
+  border-radius: 0.5rem;
 }
 .logoText{
   width: 7rem;
@@ -49,7 +51,6 @@
 .logoRedesSocial{
   width: 2.5rem;
   border-radius: 8px;
-
 }
 /*Conquistas*/
 .conquistasContainer {
@@ -88,8 +89,7 @@
 
 .conquistaImagem {
   width: 100%;
-  height: auto;
-  max-height: 150px;
+  height: 7rem;
   margin-bottom: 10px;
   border-radius: 4px;
 }
@@ -116,4 +116,26 @@
 }
 .botoes{
   margin: 0.3rem 0 0 0.5rem;
+}
+
+@media (max-width: 900px) {
+  .containerSobre{
+    width: auto;
+    padding: 0 1rem;
+  }
+  .sobreTitulos{
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .containerPerfil{
+    flex-direction: column;
+    width: auto;
+  }
+  .perfilImage{
+    width: auto;
+  }
+  .container2{
+    width: auto;
+  }
 }

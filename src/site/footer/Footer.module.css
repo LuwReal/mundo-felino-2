@@ -1,14 +1,15 @@
 .container{
     height: 10rem;
-    width: 82.7rem;
     background-color: #333; 
     color: white;
+    width: 100%;
     text-align: center; 
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
+    font-size: 1.2rem;
 }
 .container ul{
     list-style-type: none;
@@ -18,13 +19,25 @@
     border-left: 2px solid white;
     text-align: center;
     margin-left: 0.5rem;
-    height: 100%;
     padding-left: 1rem;
 }
-.container h5{
-    margin: 0;
-}
+
 .container a{
     color: #fff;
     text-decoration: none;
+}
+@media (max-width: 350px) {
+    .container{
+        flex-direction: column;
+        height: auto;
+        align-items:start;
+        text-align: center; 
+        padding-left: 0px;
+        justify-content:start;
+    }
+    .container div{
+        padding: 0;
+        text-align: left;
+        margin-top: 1rem;
+    }
 }

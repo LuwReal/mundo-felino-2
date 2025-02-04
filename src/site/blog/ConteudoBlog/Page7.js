@@ -1,5 +1,6 @@
 import style from './Page2.module.css'
 import Recomendados from '../componets/Recomendados';
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial';
 import { Helmet } from 'react-helmet-async';
 
@@ -10,7 +11,7 @@ function Page2(){
                 <meta name="description" content="Descubra os 5 gatos mais famosos do Japão, símbolos de sorte e cultura, incluindo o icônico Maneki-Neko e a adorável Hello Kitty. Conheça suas histórias e curiosidades!" />
                 <meta property="og:title" content="Raças de Gatos Famosas" />
                 <meta property="og:description" content="Descubra os 5 gatos mais famosos do Japão, símbolos de sorte e cultura, incluindo o icônico Maneki-Neko e a adorável Hello Kitty. Conheça suas histórias e curiosidades!" />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs-Page2/5-gatos-mais-famosos-do-japao" />
                 <title>5 Gatos Mais Famosos do Japão</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -83,14 +84,17 @@ function Page2(){
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs-Page2/5-gatos-mais-famosos-do-japao"} link2={"https://mundo-felino-2.com.br/Blogs-Page2/5-gatos-mais-famosos-do-japao"} link3={"https://mundo-felino-2.com.br/Blogs-Page2/5-gatos-mais-famosos-do-japao"}/>
                 </div>
                 <div className={style.articleFooter}>
                     <h3>Gatos e a Cultura Japonesa</h3>
                     <p>Esses são apenas alguns dos gatos bastante conhecidos, desempenhando papéis únicos e especiais na cultura japonesa. Seja através da tradição, internet ou representações simbólicas, esses felinos continuam a encantar gerações e a inspirar histórias.</p>
                 </div>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

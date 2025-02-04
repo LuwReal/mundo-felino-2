@@ -1,5 +1,6 @@
 import style from './Page12.module.css'
 import Recomendados from '../componets/Recomendados';
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial';
 import { Helmet } from 'react-helmet-async';
 
@@ -10,7 +11,7 @@ function Page12(){
                 <meta name="description" content="Descubra as 5 raças de gatos mais conhecidas mundialmente e suas características marcantes." />
                 <meta property="og:title" content="Raças de Gatos Famosas" />
                 <meta property="og:description" content="Descubra as 5 raças de gatos mais conhecidas mundialmente e suas características marcantes." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs-Page2/as-5-racas-de-gatos-famosas" />
                 <title>As 5 Raças de Gatos Famosas</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -100,14 +101,17 @@ function Page12(){
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial link1={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'} link2={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}link3={'http://localhost:3000/Blogs/os-5-ranks-mais-absurdos-dos-gatos'}/>
+                    <RedeSocial link1={'https://mundo-felino-2.com.br/Blogs-Page2/as-5-racas-de-gatos-famosas'} link2={'https://mundo-felino-2.com.br/Blogs-Page2/as-5-racas-de-gatos-famosas'}link3={'https://mundo-felino-2.com.br/Blogs-Page2/as-5-racas-de-gatos-famosas'}/>
                 </div>
                 <div className={style.articleFooter}>
                     <h3>Qual é a sua raça favorita?</h3>
                     <p>Bem, tanto defeitos quanto desvantagens, todos os gatos possuem suas qualidades, que os tornam especiais. Mas o que importa é o quanto você ama seus felinos. Apesar da forma discreta com que demonstram seu amor, isso não os torna menos especiais. Por isso, ao escolher um gato, considere seu estilo de vida e o tipo de personalidade que melhor se encaixa na sua família.</p>
                 </div>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

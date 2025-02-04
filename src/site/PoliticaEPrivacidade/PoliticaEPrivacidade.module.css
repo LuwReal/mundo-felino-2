@@ -1,6 +1,7 @@
 .container{
     color: rgb(42, 50, 61);
-    margin: 0 10rem;
+    width: 80%;
+    margin: auto;
 }
 .container ul{
     list-style-type: none;

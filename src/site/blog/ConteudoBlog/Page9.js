@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial'
 import style from './Page9.module.css'
 
@@ -10,7 +11,7 @@ function Page9(){
                 <meta name="description" content="Descubra por que os gatos são essenciais na cultura japonesa, explorando sua presença na mitologia, arte, folclore, economia tradicional e cultura pop do Japão." />
                 <meta property="og:title" content="5 Razões Que Tornaram os Gatos Essenciais na Cultura Japonesa" />
                 <meta property="og:description" content="Descubra por que os gatos são essenciais na cultura japonesa, explorando sua presença na mitologia, arte, folclore, economia tradicional e cultura pop do Japão." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs-Page2/5-raz%C3%B5es-que-tornaram-os-gatos-essenciais-na-cultura-japonesa" />
                 <title>5 Razões Que Tornaram os Gatos Essenciais na Cultura Japonesa</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -46,14 +47,17 @@ function Page9(){
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                     <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs-Page2/5-raz%C3%B5es-que-tornaram-os-gatos-essenciais-na-cultura-japonesa"} link2={"https://mundo-felino-2.com.br/Blogs-Page2/5-raz%C3%B5es-que-tornaram-os-gatos-essenciais-na-cultura-japonesa"} link3={"https://mundo-felino-2.com.br/Blogs-Page2/5-raz%C3%B5es-que-tornaram-os-gatos-essenciais-na-cultura-japonesa"}/>
                 </div>
                 <div className={style.articleFooter}>
                     <h3>Conclusão</h3>
                     <p>Isso demonstra que os gatos são mais do que simples animais de estimação no Japão. Eles conquistaram e fazem parte integral da cultura, influenciando a arte, o folclore e até mesmo o comércio. Ao explorar essas conexões, podemos entender melhor por que o Japão tem uma relação tão especial com esses felinos fascinantes.</p> 
                 </div>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

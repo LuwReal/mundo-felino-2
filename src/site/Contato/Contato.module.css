@@ -118,5 +118,11 @@
       font-size: 14px;
     }
   }
-  
+  @media (max-width: 1200px) {
+    .channelList{
+      width: auto;
+      flex-wrap: wrap;
+    }
+    
+  }
 

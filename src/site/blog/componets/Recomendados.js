@@ -17,7 +17,7 @@ function Recomendados(){
           if (window.scrollY >= 250) {
             setStyle({
               position: 'fixed',
-              transform: 'translateY(49%)', 
+              transform: 'translateY(40%)', 
             });
           } else {
             setStyle({
@@ -43,23 +43,23 @@ function Recomendados(){
         <div className={style.container}>
             <ul className={style.blogList} style={style2}>
                 <li className={style.blogItem} onClick={() => {link(0)}}>
-                    <img className={style.blogImage} src='/img/blog/page1/os-10-alimentos-mais-perigosos-para-gatos.jpg' alt="Ilustração das 5 raças de gatos mais famosas: Siamês, Persa, Maine Coon, Bengal e Ragdoll."/>
+                    <img className={style.blogImage} src='/img/blog/page1/alimentos-perigosos.jpg' alt="Ilustração das 5 raças de gatos mais famosas: Siamês, Persa, Maine Coon, Bengal e Ragdoll."/>
                     <div className={style.blogContent}>
-                        <h3>Os 10 Alimentos Perigosos para Gatos</h3>
-                        <p>Descubra os 10 alimentos mais perigosos para gatos, os...</p>
+                        <h3>Os 10 Alimentos Perigosos para...</h3>
+                        <p>Descubra os 10 alimentos mais perigosos para gatos...</p>
                         <p><span className={style.stylesP}>Visite o Blog</span></p>
                     </div>
                 </li>
                 <li className={style.blogItem} onClick={() => {link(1)}}>
-                    <img className={style.blogImage} src='/img/blog/page2/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa.jpg' alt="Imagem representativa dos 5 gatos mais famosos do Japão, incluindo suas histórias e curiosidades."/>
+                    <img className={style.blogImage} src='/img/blog/page2/pragas-gatos.jpg' alt="Imagem representativa dos 5 gatos mais famosos do Japão, incluindo suas histórias e curiosidades."/>
                     <div className={style.blogContent}>
-                        <h3>5 Pragas Que Gato Eliminar na Sua Casa</h3>
-                        <p>Descubra 5 pragas comuns que seu gato pode eliminar...</p>
+                        <h3>5 Pragas Que Gato Eliminar na Sua...</h3>
+                        <p>Descubra 5 pragas comuns que seu gato pode...</p>
                         <p><span className={style.stylesP}>Visite o Blog</span></p>
                     </div>
                 </li>
                 <li className={style.blogItem} onClick={() => {link(2)}}>
-                    <img className={style.blogImage} src='/img/blog/page6/maine-coon-a-maior-raça-de-gato.jpg' alt="Imagem representativa dos 5 ranks mais absurdos dos gatos em relação a outros animais."/>
+                    <img className={style.blogImage} src='/img/blog/page6/maine-coon.jpg' alt="Imagem representativa dos 5 ranks mais absurdos dos gatos em relação a outros animais."/>
                     <div className={style.blogContent}>
                         <h3>Maine Coon: Maior Raça de Gato...</h3>
                         <p>Conheça o Maine Coon, a maior raça de gato...</p>
@@ -68,10 +68,8 @@ function Recomendados(){
                 </li>
                 <li className={style.blogItem}>
                   <div style={{margin: 'auto'}}>
-                    
                     <ProximaPageBlog />
                   </div>
-                  
                 </li>
             </ul>
         </div>

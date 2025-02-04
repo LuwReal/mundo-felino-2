@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial'
-import style from './Page7.module.css'
+import style from './Page2.module.css'
 
 function Page7(){
     return(
@@ -10,7 +11,7 @@ function Page7(){
                 <meta name="description" content="Descubra 5 pragas comuns que seu gato pode eliminar em sua casa de forma natural e eficaz. Mantenha seu lar mais seguro e livre de pestes com a ajuda do seu felino." />
                 <meta property="og:title" content="5 Pragas Que Seu Gato Vai Eliminar na Sua Casa" />
                 <meta property="og:description" content="Descubra 5 pragas comuns que seu gato pode eliminar em sua casa de forma natural e eficaz. Mantenha seu lar mais seguro e livre de pestes com a ajuda do seu felino." />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa" />
                 <title>5 Pragas Que Seu Gato Vai Eliminar na Sua Casa</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -20,7 +21,7 @@ function Page7(){
                     <li>
                         <h2 className={style.articleListItem}>Ratos e Camundongos</h2>
                         <p className={style.articleListText}>Os gatos são conhecidos por serem excelentes caçadores de roedores. Como prova disso, temos a história: eles foram bastante influentes na cultura tradicional japonesa, ajudando os fornecedores de seda no Japão antigo. Sem contar que foram injustiçados na Europa, durante a Idade Média, pelo fato de serem associados às bruxas, principalmente os gatos pretos. Eles eram caçados frequentemente, o que levou a um alto crescimento na população de ratos, influenciando na sua propagação. Além disso, o cheiro de gato na casa pode fazer com que os roedores pensem duas vezes antes de se aproximarem.</p> 
-                        <img className={style.articleListImg} src='/img/blog/page2/gato-obersevanndo-um-rato.jpg' alt="Gato Obersevando Rato" title='Gato e Rato'/>
+                        <img className={style.articleListImg} src='/img/blog/page2/imagem1.jpg' alt="Gato Obersevando Rato" title='Gato e Rato'/>
                     </li>
 
                     <li>
@@ -30,7 +31,7 @@ function Page7(){
 
                     <li>
                         <h2 className={style.articleListItem}>Lagartixas</h2>
-                        <p className={style.articleListText}>As pequenas lagartixas que aparecem nas paredes <img style={{width: '15rem', height: '15rem', float: 'right', display: 'flex'}}className={style.articleListImg} src='/img/blog/page2/gato-predando-sua-presa.jpg' alt="Gato predando Lagartixa" title='Gato e Lagartixa'/>  ou tetos de sua casa podem se tornar um brinquedo... quero dizer, um alvo para seu gato. Além de caçar, os felinos podem ser bastante persistentes em espantar esses visitantes indesejados.</p>
+                        <p className={style.articleListText}>As pequenas lagartixas que aparecem nas paredes <img style={{width: '15rem', height: '15rem', float: 'right', display: 'flex'}}className={style.articleListImg} src='/img/blog/page2/imagem2.jpg' alt="Gato predando Lagartixa" title='Gato e Lagartixa'/>  ou tetos de sua casa podem se tornar um brinquedo... quero dizer, um alvo para seu gato. Além de caçar, os felinos podem ser bastante persistentes em espantar esses visitantes indesejados.</p>
                     </li>
                 
                     <li>
@@ -41,11 +42,11 @@ function Page7(){
                     <li>
                         <h2 className={style.articleListItem}>Aranhas</h2>
                         <p className={style.articleListText}>Essa dica serve para qualquer praga que citei acima. Caso você tenha desenvolvido fobia de aranhas no passado e qualquer coisinha em relação a elas te deixe em um estado de pavor, uma das coisas que pode te ajudar é ter um gato em casa. Eles podem acabar sendo um aliado no controle dessas pragas. Muitos gatos se interessam pelo movimento das aranhas e costumam caçá-las rapidamente, ajudando a aliviar sua fobia em relação a esses aracnídeos.</p>
-                        <img className={style.articleListImg} src='/img/blog/page2/gato-e-aranha.jpg' alt="Foto Partida ao meio Com Gato do Lado Direito e Arnhado do Esquerdo" title='Gato e Aranha'/>
+                        <img className={style.articleListImg} src='/img/blog/page2/imagem3.jpg' alt="Foto Partida ao meio Com Gato do Lado Direito e Arnhado do Esquerdo" title='Gato e Aranha'/>
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                     <RedeSocial />
+                <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa"} link2={"https://mundo-felino-2.com.br/Blogs/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa"} link3={"https://mundo-felino-2.com.br/Blogs/5-pragas-que-seu-gato-vai-eliminar-na-sua-casa"}/>
                 </div>
                 <footer className={style.articleFooter}>
                     <h3>Cuidados Importantes</h3>
@@ -61,7 +62,10 @@ function Page7(){
                     <p>Seu gato não é apenas um animal de estimação; ele também pode ser um guardião silencioso da sua casa. Valorize essas habilidades naturais e aproveite a companhia dele enquanto mantém sua casa protegida!</p>
                 </footer>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }

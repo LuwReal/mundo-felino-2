@@ -1,5 +1,6 @@
 import { Helmet } from 'react-helmet-async'
 import Recomendados from '../componets/Recomendados'
+import Recomendados2 from '../componets/Recomendados2'
 import RedeSocial from '../componets/RedeSocial'
 import style from './Page10.module.css'
 
@@ -10,7 +11,7 @@ function Page10(){
                 <meta name="description" content="Descubra tudo sobre o gato Bengal, uma raça exótica que combina aparência selvagem, personalidade carinhosa e inteligência. Saiba mais sobre sua origem, cuidados e curiosidades!" />
                 <meta property="og:title" content="Gato Bengal: O Exótico Gato que Encanta com sua Beleza Selvagem" />
                 <meta property="og:description" content="Descubra tudo sobre o gato Bengal, uma raça exótica que combina aparência selvagem, personalidade carinhosa e inteligência. Saiba mais sobre sua origem, cuidados e curiosidades!" />
-                <meta property="og:url" content="https://www.example.com/racas-de-gatos-famosas" />
+                <meta property="og:url" content="https://mundo-felino-2.com.br/Blogs-Page2/gato-bengal-o-exotico-gato-que-encanta-com-sua-beleza-selvagem" />
                 <title>Gato Bengal: com sua Beleza Selvagem</title>
             </Helmet>
             <article className={style.articleContainer}>
@@ -21,7 +22,7 @@ function Page10(){
                         <h2 className={style.articleListItem}>1. Origem e História</h2>
                         <p className={style.articleListText}>O gato Bengal tem uma história relativamente recente, surgindo na década de 1960, nos Estados Unidos. Não é de se espantar, afinal, um gato com essas características só poderia ter sido idealizado por meio de cruzamentos muito específicos. A raça é o resultado da união entre gatos domésticos e o leopardo-asiático (Prionailurus bengalensis), um felino selvagem de pequeno porte encontrado na Ásia.</p>
                         <p className={style.articleListText}>A ideia por trás do cruzamento era criar um gato com a aparência selvagem de um leopardo, mas com o temperamento amigável e sociável de um gato doméstico. O nome “Bengal” foi inspirado no nome científico do leopardo-asiático, destacando a herança selvagem da raça. Esse cruzamento foi reconhecido por várias associações internacionais de felinos e, desde então, o Bengal tem sido mantido como um gato doméstico com aparência exótica.</p>
-                        <img className={style.articleListImg} src='/img/blog/page10/filhotes-de-gato-da-raça-bengal.jpg' alt="Filhotes de gato da raça bengal reunido" title='Filhotes de Bengal'/>
+                        <img className={style.articleListImg} src='/img/blog/page10/imagem2.jpg' alt="Filhotes de gato da raça bengal reunido" title='Filhotes de Bengal'/>
                     </li>
 
                     <li>
@@ -54,7 +55,7 @@ function Page10(){
                             <dt>Vocais:</dt>
                             <dd>Comunicam seus desejos e emoções com miados únicos e ronronados.</dd>
                         </dl>
-                        <img className={style.articleListImg} src='/img/blog/page10/gato-da-raça-bengal.jpg' alt="Gato da Raça Bengal após derruba ponte de planta" title='Gato Bengal'/>
+                        <img className={style.articleListImg} src='/img/blog/page10/imagem3.jpg' alt="Gato da Raça Bengal após derruba ponte de planta" title='Gato Bengal'/>
                     </li>
                     
                     <li>
@@ -85,14 +86,17 @@ function Page10(){
                     </li>
                 </ul>
                 <div className={style.redesSocial}>
-                    <RedeSocial />
+                 <RedeSocial link1={"https://mundo-felino-2.com.br/Blogs-Page2/gato-bengal-o-exotico-gato-que-encanta-com-sua-beleza-selvagem"} link2={"https://mundo-felino-2.com.br/Blogs-Page2/gato-bengal-o-exotico-gato-que-encanta-com-sua-beleza-selvagem"} link3={"https://mundo-felino-2.com.br/Blogs-Page2/gato-bengal-o-exotico-gato-que-encanta-com-sua-beleza-selvagem"}/>
                 </div>
                 <div className={style.articleFooter }>
                     <h3>Conclusão</h3>
                     <p>O gato Bengal é uma verdadeira obra de arte da natureza e da seleção felina. Com sua aparência selvagem e coração doméstico, eles conquistam cada vez mais espaço nos lares e corações ao redor do mundo. E se você juntar um Bengal com um gato de rua? Bom, você terá... dois gatos!</p>
                 </div>
             </article>
-            <Recomendados />
+            <div className={style.recomendados}>
+                <Recomendados />
+            </div>
+            <Recomendados2 />
         </div>
     )
 }
